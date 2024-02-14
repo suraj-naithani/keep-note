@@ -7,7 +7,7 @@ const router = require('./router/auth-router');
 const noteRouter = require('./router/note-router');
 
 const corsOptions = {
-    origin: "keep-notes-apk.vercel.app",
+    origin: "https://keep-notes-apk.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
 }
