@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
 
     // hosting api 
     // const API = import.meta.env.API_URI;
-    const API = "http://localhost:8000";
+    const API = "keep-note-api.vercel.app";
 
     const storeTokenInLS = (serverToken) => {
         setToken(serverToken)
