@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
 
     // hosting api 
     // const API = import.meta.env.API_URI;
-    const API = "https://streamify-api-backend.vercel.app";
+    const API = "https://keep-note-api.vercel.app";
 
     const storeTokenInLS = (serverToken) => {
         setToken(serverToken)
