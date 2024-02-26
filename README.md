@@ -1,17 +1,9 @@
 # Keep Note MERN Project
-## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Technologies Used](#technologies-used)
 
 ## Introduction
 
-The Keep Note MERN Project is a web application built using the MERN stack, allowing users to create, edit, and delete notes. It provides a user-friendly interface for managing and organizing personal or project-related information.
+The Keep Note MERN Project is a web application built using the MERN stack, allowing users to create, edit, and delete notes. It provides a user-friendly interface for managing and organizing personal or project-related information. [Demo](https://keep-notes-apk.vercel.app/)
 
 ## Features
 
@@ -95,6 +87,3 @@ The project structure is organized as follows:
 - [Express.js](https://expressjs.com/)
 - [React](https://react.dev/)
 - [Node.js](https://nodejs.org/en)
-
- ```bash
-  Feel free to customize this template based on your specific project details and requirements.
