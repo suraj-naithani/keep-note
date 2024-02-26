@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../context/auth'
 import { toast } from 'react-toastify';
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Register = () => {
     const [user, setUser] = useState({
