@@ -68,7 +68,7 @@ const Login = () => {
                         <div className="inputs">
                             <input type="email" name="email" value={user.email} onChange={handleChange} placeholder="Email" className="input" autoComplete="off" required />
                            <div className='passwordFiled'>
-                                <input type={showPassword ? "text" : "password"} name='password' value={user.password} onChange={handleInput} autoComplete='off' placeholder='Password' className='input password' required />
+                                <input type={showPassword ? "text" : "password"} name='password' value={user.password} onChange={handleChange} autoComplete='off' placeholder='Password' className='input password' required />
                                 {showPassword ? (
                                     <FaRegEyeSlash className='eyeIcon' onClick={togglePasswordVisibility} />
                                 ) : (
