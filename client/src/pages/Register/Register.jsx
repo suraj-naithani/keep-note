@@ -49,7 +49,7 @@ const Register = () => {
                 toast.success('Registration Successful');
                 navigate("/");
             } else {
-                toast.error("Registration Failed");
+                toast.error(data.msg);
             }
         } catch (error) {
             console.log(error);
@@ -64,7 +64,14 @@ const Register = () => {
                         <div className="inputs">
                             <input type="text" name="username" placeholder="Name" className="input" value={user.username} onChange={handleInput} autoComplete="off" required />
                             <input type="email" name="email" placeholder="Email" className="input" value={user.email} onChange={handleInput} autoComplete="off" required />
-                            <input type="password" name="password" placeholder="Password" className="input" value={user.password} onChange={handleInput} autoComplete="off" required />
+                            <div className='passwordFiled'>
+                                <input type={showPassword ? "text" : "password"} name='password' value={user.password} onChange={handleInput} autoComplete='off' placeholder='Password' className='input password' required />
+                                {showPassword ? (
+                                    <FaRegEyeSlash className='eyeIcon' onClick={togglePasswordVisibility} />
+                                ) : (
+                                    <FaRegEye className='eyeIcon' onClick={togglePasswordVisibility} />
+                                )}
+                            </div>
                         </div>
                         <button type='submit' className="button">Continue</button>
                         <p className='loginLink'>Already have an account? <Link to="/login" className='login'>Sign in instead</Link></p>
