@@ -9,6 +9,12 @@ const Register = () => {
         email: "",
         password: "",
     })
+    const [showPassword, setShowPassword] = useState(false);
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
 
     const navigate = useNavigate();
     const { storeTokenInLS, API } = useAuth();
