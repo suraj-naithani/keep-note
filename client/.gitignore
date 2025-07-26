@@ -23,3 +23,9 @@ gitignore
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore real environment files
+.env
+
+# Don't ignore .env.sample
+!.env.sample

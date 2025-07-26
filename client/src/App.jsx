@@ -1,13 +1,13 @@
-import './App.css'
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from './component/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import Register from './pages/Register/Register';
-import Login from './pages/Login/Login';
-import AddNote from './pages/AddNote/AddNote';
-import Logout from './pages/Logout/Logout'
-import Update from './pages/Update/Update';
-import Error from './pages/Error/Error';
+import Navbar from "./component/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
+import AddNote from "./pages/AddNote/AddNote";
+import Logout from "./pages/Logout/Logout";
+import Update from "./pages/Update/Update";
+import Error from "./pages/Error/Error";
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
