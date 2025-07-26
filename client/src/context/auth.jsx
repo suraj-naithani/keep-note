@@ -14,10 +14,16 @@ export const AuthProvider = ({ children }) => {
   // const API = import.meta.env.API_URI;
   const API = "http://localhost:8000";
 
+<<<<<<< HEAD
   const storeTokenInLS = (serverToken) => {
     setToken(serverToken);
     return localStorage.setItem("token", serverToken);
   };
+=======
+    // hosting api 
+    // const API = import.meta.env.API_URI;
+    const API = "https://keep-note-api.vercel.app";
+>>>>>>> cfb4f8b2d1b4217a228999654d77fba60ce3bf63
 
   let isLoggedIn = !!token;
 
@@ -75,8 +81,16 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => {
   const authContextValue = useContext(AuthContext);
 
+<<<<<<< HEAD
   if (!authContextValue) {
     throw new Error("useAuth used outside of AuthProvider");
   }
   return authContextValue;
 };
+=======
+    if (!authContextValue) {
+        throw new Error("useAuth used outside of AuthProvider");
+    }
+    return authContextValue;
+}
+>>>>>>> cfb4f8b2d1b4217a228999654d77fba60ce3bf63
